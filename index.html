@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+</div>
+</div>
+
+<!-- FAKTURY -->
+<div id="invoices" class="tab">
+<h1>💵 Faktury</h1>
+
+<div class="form-box">
+<input type="text" id="buyer" placeholder="Nabywca">
+<input type="text" id="receiver" placeholder="Odbiorca">
+<input type="text" id="nip" placeholder="NIP">
+<input type="text" id="address" placeholder="Adres">
+<input type="date" id="invoiceDate">
+<input type="number" id="amount" placeholder="Kwota">
+<input type="text" id="reason" placeholder="Za co faktura">
+
+<button onclick="sendInvoice()">
+Wyślij fakturę
+</button>
+</div>
+
+<div class="list-box">
+<h2>Ostatnie faktury</h2>
+<div id="invoiceList"></div>
+</div>
+</div>
+
+<!-- STATYSTYKI -->
+<div id="stats" class="tab">
+<h1>📊 Statystyki</h1>
+
+<div class="cards">
+<div class="card">
+<h3>Raporty</h3>
+<p id="reportStats">0</p>
+</div>
+
+<div class="card">
+<h3>Faktury</h3>
+<p id="invoiceStats">0</p>
+</div>
+
+<div class="card">
+<h3>Łączna kwota</h3>
+<p id="moneyStats">0 PLN</p>
+</div>
+</div>
+</div>
+
+<!-- KARTA POJAZDU -->
+<div id="vehicle" class="tab">
+<h1>🚒 Karta Pojazdu</h1>
+
+<div class="form-box">
+<input type="text" placeholder="Pojazd">
+<input type="text" placeholder="Kierowca">
+<input type="text" placeholder="Stan paliwa">
+<input type="text" placeholder="Przebieg">
+
+<button>
+Zapisz kartę pojazdu
+</button>
+</div>
+</div>
+
+<!-- PANEL ZARZĄDU -->
+<div id="management" class="tab">
+<h1>🛡️ Panel Zarządu</h1>
+
+<div class="form-box">
+<input type="text" id="memberName" placeholder="Nick strażaka">
+
+<select id="actionType">
+<option>Plus</option>
+<option>Minus</option>
+<option>Awans</option>
+<option>Zwolnienie</option>
+<option>Kurs dowódców OSP</option>
+<option>Kurs kierowcy-konserwatora</option>
+<option>Kurs naczelników OSP</option>
+</select>
+
+<button onclick="managementAction()">
+Wykonaj akcję
+</button>
+</div>
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
